@@ -9,7 +9,7 @@ def getGitVersion = { ->
     def gitVersion = new ByteArrayOutputStream()
     exec {
         workingDir "../"
-        commandLine 'dotnet', 'gitversion'
+        commandLine 'dotnet', 'gitversion', 'gitversion.yml'
         standardOutput = gitVersion
     }
     return new JSONObject(gitVersion.toString())

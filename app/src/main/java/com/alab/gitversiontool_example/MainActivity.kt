@@ -12,5 +12,6 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<TextView>(R.id.textView).text = "Версия: ${BuildConfig.VERSION_NAME}"
         Log.d("myL", "1")
+        Log.d("myL", "2")
     }
 }
