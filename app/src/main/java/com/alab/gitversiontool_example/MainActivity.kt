@@ -2,6 +2,7 @@ package com.alab.gitversiontool_example
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -10,5 +11,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<TextView>(R.id.textView).text = "Версия: ${BuildConfig.VERSION_NAME}"
+        Log.d("myL", "1")
     }
 }
